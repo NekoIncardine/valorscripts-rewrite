@@ -1,0 +1,267 @@
+v1.0.0 (12/14/17):
+- Massive visual update.
+- Updated tech usage display.
+- Ultimate Techniques can now be re-used when overriding limits.
+- Fixed some cases where Valor would update when it shouldn't.
+
+v1.0.1 (12/16/17):
+- Fixed bug that prevented deletion of techs.
+- Fixed issue with skill level warnings not being displayed.
+- Fixed a bug where Granted Skills weren't working.
+
+v1.0.2 (12/26/17):
+- Fixed a bunch of bugs with the Inflicted Flaws field.
+- Granted flaws/skills from mods/limits now appear in the tech description.
+
+v1.0.3 (12/27/17): 
+- Fixed a bunch of display issues with Domain Core.
+- Debilitating attacks now show their inflicted flaws in the tech description.
+
+v1.0.4 (1/6/18):
+- Slightly less masssive visual update.
+- Fixed a couple typos.
+- Domain Core should be treating mod levels correctly now.
+- Tech descriptions update when Attack values change.
+
+v1.0.5 (1/25/18):
+- Added support for Continuous Recovery.
+- Crisis and Berserker now only appear when using damage techs.
+- Added support for Continuous Recovery mod.
+
+v1.0.6 (2/21/18):
+- Fixed display of Healing Core heal amount.
+- New command !sizeup displays information for when a player uses the Size Up skill.
+- Unerring ults no longer display as already used on !status command.
+- !t-undo now displays a message indicating that it was used.
+- Vitality Limit now blocks at 40% Health, not 60%.
+- Fixed a few bugs.
+
+v1.0.7 (2/26/18):
+- Speed is finally correctly displayed as Move.
+- Bugfix: Healing techs without mods were broken by the new regen logic
+- Bugfix: Transformations weren't counted as ultimates in a lot of ways.
+- Bugfix: Transformations restore HP again.
+
+v1.0.8 (3/19/18):
+- Healing values displayed correctly on mnd/guts healing techniques.
+- Bonuses are once again added to technique attack rolls.
+
+v1.0.9 (5/21/18):
+- Bugfixes.
+- Fixed price on Unyielding Determination.
+- Skill/Flaw/Core libraries are no longer storied within the character sheet.
+- Can manually select a sheet to finalize to if Finalize Level-up doesn't work.
+- Finalize Level-up runs much faster.
+- Custom core no longer shows a +1 when a Master is using it and there's no roll being made.
+- Using a Transformation automatically raises the All Rolls bonus by one.
+- !status shows the right amount of ammo for ammo limits (was off by one).
+- Fixed rare issue where !crit would think a tech had the wrong core.
+- Reposition techs now factor in Unmovable for each target.
+
+v1.1.0 (9/4/2018):
+- Big code refactor.
+- Logic for reading limits is slightly more forgiving.
+- Sheet warns you about taking Health Limit over level 5.
+- Healer was incorrectly listed as Fixed progression.
+- Core Power was incorrectly called Core Level.
+- Errata: Intimidating Transformation cost and description text both fixed.
+- Errata: Attack Node progression is Fast.
+- Errata: Swift Step cost is now 4/1 and progression is Fast.
+- Errata: Increased Size cost is now 2/1.
+- Errata: Unmovable cost is now 4/2.
+- Errata: Underhanded is now a Season 1 Skill.
+- Bugfix: Berserk and Crisis sometimes displayed as if they were applied, even when the character wasn't at critical HP.
+- Bugfix: Displayed healing values didn't factor in the Healer skill.
+- Bugfix: Using a healing tech with no associated stat caused a crash.
+- Bugfix: Repositions were all displaying 0.
+- Bugfix: Boosts and Heals with stats associated with them no longer show a die roll.
+- Bugfix: I hecked up critical health warnings REAL bad.
+- New: Finalizing a level up sheet now indicates how many levels you gained.
+- New: Commands !addhp, !addst, !subhp, and !subst to grant or take away an increment of HP or ST for all selected tokens.
+
+v1.1.1 (10/16/2018):
+- Added checkboxes for Overdrive Skills.
+- Fixed a few mistakes in the skill library.
+- Automatically move characters forward and backwards as their initiative changes.
+- Bugfix: Various minor crash states
+
+v1.1.2 (10/26/2018):
+- Added a roll20 roll template for techniques.
+- Bugfix: Crash when using techniques without a character token.
+- Bugfix: Crash when using !crit if the original user's token was deleted.
+
+v1.2.5 (11/12/2018):
+- Unified version numbering for scripts and sheet.
+- Flunkies, Soldiers, and Swarms now get half power from Attack skills.
+- Flunkies, Soldiers, and Swarms now get reduced TP from Versatile Fighter.
+- Flunkies and Soldiers now get half power on healing techniques.
+- Bugfix: Crash when using a technique with Ultimate Health Limit.
+- Bugfix: Overload Limits button not unchecking itself after use.
+
+v1.3.0 (12/10/2018):
+- Massive CSS cleanup.
+- No longer using !important or <table> anywhere.
+- Made things look nicer.
+- Added field for ST cost of custom core techniques.
+- Bugfixes.
+- Added support for custom ST cost on custom core techniques.
+
+v1.4.0 (12/11/2018):
+- Added SP tracking for boosts, weakens, et cetera.
+- Techs now display warnings again.
+- Small adjustments to tech layout.
+
+v1.4.1 (12/13/2018):
+- Made a couple input fields wider so that negative values don't get cut off.
+- Skills, Flaws and Techs got a visual overhaul.
+- Added warnings for Skills and Flaws granted by techs if the flaw/tech is too high level.
+- SP caps now actually display for Transformations.
+
+v1.4.2 (12/16/2018):
+- Bugfix: Some skills/flaws didn't parse right when they had a level listed.
+- Bugfix: Debilitating attacks now list max flaw SP.
+
+v1.4.3 (1/8/2019):
+- Bugfix: Override Limits wasn't working right for health/init/valor costs.
+- Bugfix: Crash when creating a character sheet on a character who has no level specified.
+- Various minor sheet layout adjustments.
+
+v1.4.4 (1/10/2019):
+- Bugfix: Techs now render properly in Firefox.
+- Small tech layout adjustments.
+
+v1.4.5 (1/14/2019):
+- Bugfix: "Crisis" always displayed in the title of ults if you had the skill.
+- Bugfix: Initiative button missing.
+- UI: Changed color of tech name on the techs tab.
+
+v1.5.0 (5/9/2019):
+- Bugfix: Various skills had the wrong growth rate.
+- Bugfix: "Jump" didn't process SP cost.
+- Bugfix: Reposition distance and damage didn't render properly when NPC tech effects were hidden.
+- UI: Added a warning if multiple special attack mods are added to the same tech.
+- New: Added checkbox to Throw techniques to reroll the attack at no cost.
+- New: Added experimental feature where damage and weaken techs can be auto-applied to the target by the GM.
+- New: If !effect is used with a duration of 0, it won't track duration for the effect.
+
+v1.5.1 (6/22/2020):
+- Bugfix: Various incorrect costs.
+- Bugfix: Healing techs didn't heal half value for soldiers.
+- Bugfix: Custom Flaws without names would cause a crash.
+- Bugfix: Using !init in a brand new game would cause a crash.
+- Bugfix: !def didn't display def/res from bonus fields.
+- Bugfix: !crit didn't display damage from attack bonus fields.
+- Bugfix: Deleting the target then using !crit caused a crash.
+- Bugfix: Ultimate attacks with Debilitating always show a max SP of 0.
+- New: Updated Apply logic to apply hits, crits, and damage increments.
+- New: All reroll logic compressed to one checkbox.
+
+v1.5.2 (8/17/2020):
+- Bugfix: Long Reach skill now identified by boosts.
+- Bugfix: !sizeup breaking game if nothing selected.
+- Bugfix: Apply buttons don't loop infinitely on debilitating technique.
+- Bugfix: Critical health warning erroneously saying character was no longer at critical health at the exact critical threshold.
+
+v1.5.3 (3/23/2021):
+- Bugfix: Critical Health warnings weren't working right at exactly 40% HP.
+- Bugfix: Infinite loop when trying to auto-apply techs with Debilitating Strike.
+
+v1.5.4 (6/26/2021):
+- Bugfix: Overdrive skills weren't updating correctly.
+- Bugfix: Long Reach wasn't recognized as a skill.
+- Bugfix: Wrong level up cost on Nullify.
+- Bugfix: Techs used with Overload Limits couldn't be undone.
+- New: Offensive techniques will refuse to execute if no attribute is selected.
+- New: Headers in skill/flaw lists no longer use optgroup.
+
+v1.5.5 (11/4/2021):
+- Bugfix: Offensive techniques really do refuse to execute if no attribute is selected.
+- Bugfix: Flightless couldn't be added as a flaw to techniques.
+- Bugfix: Influential Control mod caused a crash.
+
+v1.6.0 (2/10/2022):
+- Bugfix: Roll20 changes made turnorder updates no longer work.
+- Bugfix: Characters who are represented by multiple tokens would sometimes gain valor multiple times per round.
+
+v1.6.1 (2/19/2022):
+- Personal Domain Skill/Flaw SP caps update dynamically as you add Skills and Flaws
+
+v1.7.0 (3/28/2023):
+- Max HP/ST sync can now be disabled.
+- Shield Core added to character sheet and scripts.
+- Max HP/ST auto-update when character changes.
+- Removed !mook command.
+- Added more logging.
+
+v1.7.1 (5/1/2023):
+- New: !unmo command.
+
+v1.8.0 (11/30/2024):
+- Bugfix: Shields now give the correct amount of shielding.
+- New: Sapping techniques automatically calculate ongoing damage.
+- New: Shield fields in the bonuses section.
+- New: Shields automatically reduce incoming damage.
+- New: Buttons to display/roll Skills/Flaws.
+- New: Skill/Flaw notes are automatically populated.
+
+v1.9.0 (6/26/2025):
+- Bugfix: Shields didn't work in various ways.
+- New: Apply button usable for boosts and weakens.
+- New: Automated defense roll buttons.
+
+v1.9.1 (7/1/2025):
+- Bugfix: Defense buttons now work for techniques with long names.
+- Bugfix: Defense buttons now work for mimic techs.
+- Bugfix: Defense buttons now honor defense roll bonuses.
+- Bugfix: Shields are now reset at the start of a scene.
+
+v1.9.2 (7/9/2025):
+- Changed: Only show one set of defense buttons when multiple of the same character are attacked
+- Bugfix: Apply Effect button now works with longer technique names
+- New: Option to roll multiple times for group defense buttons
+
+v1.9.3 (7/16/2025):
+- Bugfix: Using Aura to guard against Spirit Techniques no longer costs Stamina.
+- Bugfix: Domain techs now list the correct action.
+
+v1.10.0 (11/2/2025):
+- Added buttons to shrink and expand tech blocks for more streamlined play.
+
+v1.10.0a (11/9/2025):
+- Fixed the hitbox on the collapse/expand gear.
+
+v2.0.0 (3/16/2026):
+- Full code rewrite.
+- Bugfix: Too many to count.
+- Improved overall performance.
+- New: Techs prompt for number of targets as needed without having a dropdown.
+- New: Fourth tab that shows all available actions.
+- New: Temporary Skill/Flaw sections for boost/transform use.
+- New: "Detail" section for certain Skills/Flaws.
+- New: Skill/Flaw summary is separate from notes.
+- New: Hidden characters are given hidden initiative rolls.
+- New: Automatic processing of elemental damage adjustments.
+- New: Proper adjustment of attack/defense rolls for characters under berserker effect.
+- Probably even more I forgot.
+
+v2.0.1 (4/21/2026):
+- Custom Core now fully implemented.
+- Bugfix: Certain commands erroneously could/couldn't be used if you aren't the GM.
+- New: Specify action when making a custom core technique.
+- New: "Specify Bonus" toggle for using techs.
+
+v2.0.2 (4/27/2026):
+- Warnings added to tech description.
+- Bugfix: Balanced Fighter was producing inconsistent values.
+- Bugfix: TP didn't display until first technique was created.
+
+v2.0.3 (5/18/2026):
+- New: Verbose Techniques.
+- Bugfix: Quick Summon showed wrong action type.
+- Bugfix: Support Move action showed wrong move distance.
+- Bugfix: Immobile characters no longer show move actions on actions tab.
+- Bugfix: Crash on certain tech names.
+- Bugfix: Now properly handles non-character objects.
+
+v2.0.3a (5/31/2026):
+- Bugfix: Defense buttons actually work again.
